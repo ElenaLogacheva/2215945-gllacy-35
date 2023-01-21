@@ -70,13 +70,14 @@ body {
 
 .navigation-first {
   display: flex;
-  margin-top: 42px;
-  margin-right: 180px;
+  margin-top: 38px;
+  margin-right: 110px;
 }
 
 .catalog-button {
   display: block;
   width: 117px;
+  height: 36px;
   border: none;
   background-color: #FEAFC3;
   font-size: 16px;
@@ -86,10 +87,66 @@ body {
   padding-left: 16px;
   padding-right: 38px;
   margin: 0;
-  margin-top: -35px;
+  margin-top: -2px;
   margin-right: 16px;
   box-sizing: border-box;
   cursor: pointer;
+  position: relative;
+}
+
+.catalog-arrow {
+  position: absolute;
+  right: 23px;
+  top: 15px;
+  fill: #2D3440;
+}
+
+.catalog-button:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: none;
+  border-radius: 30px;
+}
+
+.catalog-button:active {
+  background-color: #FCFCFC;
+}
+
+.catalog-button:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid #2D3440;
+  border-radius: 30px;
+}
+
+.catalog-button:focus .catalog-arrow {
+  margin: -2px;
+}
+
+.catalog-button-default {
+  background-color: #FF4A78;
+  color: #FCFCFC;
+  border-radius: 30px;
+}
+
+.catalog-button-default .catalog-arrow {
+  fill: #FCFCFC;
+  transform: rotate(180deg);
+}
+
+.catalog-button-default:hover {
+  background-color: #FF4A78;
+  opacity: 0.6;
+  border: none;
+}
+
+.catalog-button-default:active {
+  background-color: #FF4A78;
+  opacity: 0.3;
+  border: none;
+}
+
+.catalog-button-default:focus {
+  background-color: #FF4A78;
+  border: 2px solid #2D3440;
 }
 
 .navigation-link {
@@ -98,13 +155,35 @@ body {
   color: #2D3440;
   text-decoration: none;
   text-transform: none;
+  display: block;
+  width: auto;
+  height: 36px;
+  box-sizing: border-box;
+  padding: 0;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.navigation-link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  border-radius: 30px;
+}
+
+.navigation-link:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid #2D3440;
+  border-radius: 30px;
+}
+.navigation-link:active {
+  background-color: #FCFCFC;
 }
 .navigation-delivery-link {
   margin-right: 32px;
 }
 .navigation-second {
   display: flex;
-  margin-top: 42px;
+  margin-top: 48px;
 }
 
 .phone-link {
@@ -132,8 +211,52 @@ body {
   margin-right: 16px;
   box-sizing: border-box;
   cursor: pointer;
+  position: relative;
 }
 
+.search-icon {
+  position: absolute;
+  fill: #2D3440;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.search-button:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.search-button:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid #2D3440;
+}
+.search-button:active {
+  background-color: #FCFCFC;
+  border: none;
+}
+
+.search-button-default {
+  background-color: #FF4A78;
+}
+
+.search-button-default .search-icon {
+  fill: #FCFCFC;
+}
+
+.search-button-default:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.search-button-default:focus {
+  background-color: #FF4A78;
+  border: 2px solid #000000;
+}
+
+.search-button-default:active {
+  opacity: 0.3;
+}
 .entrance-button {
   display: block;
   width: 88px;
