@@ -107,14 +107,14 @@ body {
   border-radius: 30px;
 }
 
-.catalog-button:active {
-  background-color: #FCFCFC;
-}
-
 .catalog-button:focus {
   background-color: rgba(252, 252, 252, 0.5);
   border: 2px solid #2D3440;
   border-radius: 30px;
+}
+
+.catalog-button:active {
+  background-color: #FCFCFC;
 }
 
 .catalog-button:focus .catalog-arrow {
@@ -171,11 +171,10 @@ body {
   border-radius: 30px;
 }
 
-.navigation-delivery-link:focus {
+.navigation-link:focus {
   background-color: rgba(252, 252, 252, 0.5);
   border: 2px solid #2D3440;
   border-radius: 30px;
-  margin-right: 16px;
 }
 
 
@@ -235,19 +234,6 @@ body {
   margin: auto;
 }
 
-.search-button:hover {
-  background-color: rgba(252, 252, 252, 0.5);
-}
-
-.search-button:focus {
-  background-color: rgba(252, 252, 252, 0.5);
-  border: 2px solid #2D3440;
-}
-.search-button:active {
-  background-color: #FCFCFC;
-  border: none;
-}
-
 .entrance-button {
   display: block;
   width: 88px;
@@ -303,6 +289,29 @@ body {
   left: 16px;
   top: 8px;
 }
+
+.navigation-button:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.navigation-button:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid #2D3440;
+}
+
+.navigation-button:focus .entrance-icon {
+  margin: -2px;
+}
+
+.navigation-button:focus .basket-icon {
+  margin: -2px;
+}
+
+.navigation-button:active {
+  background-color: #FCFCFC;
+  border: none;
+}
+
 .navigation-button-default {
   background-color: #FF4A78;
   color: #FCFCFC;
