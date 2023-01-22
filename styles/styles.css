@@ -71,7 +71,7 @@ body {
 .navigation-first {
   display: flex;
   margin-top: 38px;
-  margin-right: 110px;
+  margin-right: 100px;
 }
 
 .catalog-button {
@@ -165,16 +165,20 @@ body {
   padding-right: 16px;
 }
 
+
 .navigation-link:hover {
   background-color: rgba(252, 252, 252, 0.5);
   border-radius: 30px;
 }
 
-.navigation-link:focus {
+.navigation-delivery-link:focus {
   background-color: rgba(252, 252, 252, 0.5);
   border: 2px solid #2D3440;
   border-radius: 30px;
+  margin-right: 16px;
 }
+
+
 .navigation-link:active {
   background-color: #FCFCFC;
 }
@@ -198,6 +202,13 @@ body {
   margin-right: 16px;
 }
 
+.navigation-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
 .search-button {
   display: block;
   width: 32px;
@@ -237,26 +248,6 @@ body {
   border: none;
 }
 
-.search-button-default {
-  background-color: #FF4A78;
-}
-
-.search-button-default .search-icon {
-  fill: #FCFCFC;
-}
-
-.search-button-default:hover {
-  background-color: rgba(252, 252, 252, 0.5);
-}
-
-.search-button-default:focus {
-  background-color: #FF4A78;
-  border: 2px solid #000000;
-}
-
-.search-button-default:active {
-  opacity: 0.3;
-}
 .entrance-button {
   display: block;
   width: 88px;
@@ -275,6 +266,14 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
+  position: relative;
+}
+
+.entrance-icon {
+  position: absolute;
+  fill: #2D3440;
+  left: 17px;
+  top: 8px;
 }
 
 .basket-button {
@@ -285,7 +284,7 @@ body {
   border: none;
   background: rgba(252, 252, 252, 0.3);
   padding: 0;
-  padding-left: 30px;
+  padding-left: 37px;
   padding-right: 16px;
   margin: 0;
   margin-top: -10px;
@@ -295,4 +294,49 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
+  position: relative;
+}
+
+.basket-icon {
+  position: absolute;
+  fill: #2D3440;
+  left: 16px;
+  top: 8px;
+}
+.navigation-button-default {
+  background-color: #FF4A78;
+  color: #FCFCFC;
+}
+
+.navigation-button-default .search-icon {
+  fill: #FCFCFC;
+}
+
+.navigation-button-default .entrance-icon {
+  fill: #FCFCFC;
+}
+
+.navigation-button-default .basket-icon {
+  fill: #FCFCFC;
+}
+
+.navigation-button-defaultt:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.navigation-button-default:focus {
+  background-color: #FF4A78;
+  border: 2px solid #000000;
+}
+
+.navigation-button-default:focus .entrance-icon {
+  margin: -2px;
+}
+
+.navigation-button-default:focus .basket-icon {
+  margin: -2px;
+}
+
+.navigation-button-default:active {
+  opacity: 0.3;
 }
