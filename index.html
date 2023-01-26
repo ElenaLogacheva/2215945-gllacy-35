@@ -16,11 +16,34 @@
 
       <nav class="navigation">
       <div class="navigation-first">
-        <button class="catalog-button" type="button">Каталог
+        <button class="catalog-button catalog-button-default" type="button">Каталог
           <svg class="catalog-arrow" width="12" height="7" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M1.8 1.05A.67.67 0 0 0 .88 2l4.66 4.66a.66.66 0 0 0 .95 0L11.14 2a.67.67 0 0 0-.94-.95L6 5.25l-4.2-4.2Z"/>
           </svg>
         </button>
+
+        <div class="select-catalog select-catalog-open">
+          <div class="select-catalog-content">
+            <ul class="select-catalog-list">
+              <li class="select-catalog-item">
+                <a class="select-catalog-link select-catalog-link-new" href="#">Новинки</a>
+              </li>
+              <li class="select-catalog-item">
+                <a class="select-catalog-link" href="#">Сливочное</a>
+              </li>
+              <li class="select-catalog-item">
+                <a class="select-catalog-link" href="#">Щербеты</a>
+              </li>
+              <li class="select-catalog-item">
+                <a class="select-catalog-link" href="#">Фруктовый лед</a>
+              </li>
+              <li class="select-catalog-item">
+                <a class="select-catalog-link" href="#">Мелорин</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <a class="navigation-link navigation-delivery-link" href="#">Доставка и оплата</a>
         <a class="navigation-link navigation-about-link" href="#">О компании</a>
       </div>
@@ -34,6 +57,16 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M1.66 6.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z"/>
               </svg>
             </button>
+
+            <div class="popover-search">
+              <div class="popover-search-content">
+                <form class="search-form" action="#" method="post">
+                  <label class="visually-hidden" for="search">Поиск по сайту</label>
+                  <input class="search-field" placeholder="Поиск по сайту" type="text" id="search" name="search" required>
+                </form>
+              </div>
+            </div>
+
           </li>
           <li class="navigation-item">
             <button class="entrance-button navigation-button" type="button">Вход
@@ -41,6 +74,22 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.52c0-.36.3-.66.67-.66h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H8.67a.67.67 0 0 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V2.86a.67.67 0 0 0-.67-.67H8.67A.67.67 0 0 1 8 1.52Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.33a.67.67 0 0 1 .2.47.66.66 0 0 1-.2.48L5.8 11.33a.67.67 0 1 1-.94-.94l2.2-2.2H.66a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"/>
               </svg>
             </button>
+
+            <div class="popover-entrance popover-entrance-open">
+              <div class="popover-entrance-content">
+                <h2 class="entrance-title">Личный кабинет</h2>
+                <form class="entrance-form" action="#" method="post">
+                  <p><label class="visually-hidden" for="mail">Адрес электронной почты</label>
+                    <input class="mail-field" placeholder="email@example.com" type="mail" id="mail" name="mail" required></p>
+                  <p><label class="visually-hidden" for="password">Пароль</label>
+                    <input class="password-field" placeholder="......" type="password" id="password" name="password" required></p>
+                  <button class="mail-entrance-button" type="button">Войти</button>
+                </form>
+                <a class="forget-password-link" href="#">Забыли пароль?</a>
+                <a class="registration-link" href="#">Регистрация</a>
+              </div>
+            </div>
+
           </li>
           <li class="navigation-item">
             <button class="basket-button navigation-button" type="button">2 товара
