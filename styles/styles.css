@@ -417,7 +417,62 @@ body {
   border-radius: 4px;
   font-size: 16px;
   line-height: 20px;
+  padding: 48px 48px 52px 48px;
 }
+
+.entrance-title {
+  font-family: "inter", sans-serif;
+  color: #2D3440;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.mail-field {
+  display: block;
+  width: 324px;
+  height: 48px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  margin: 0;
+  padding: 0;
+}
+.mail-field::placeholder {
+  padding-left: 16px;
+}
+.password-field {
+  display: block;
+  width: 324px;
+  height: 48px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  margin: 0;
+  padding: 0;
+}
+
+.password-field::placeholder {
+  background-image: url("/images/password.svg");
+  background-repeat: no-repeat;
+}
+
+.mail-entrance-button {
+  display: block;
+  box-sizing: border-box;
+  width: 113px;
+  height: 44px;
+  border-radius: 26px;
+  background-color: #FF2F64;
+  border: 4px solid #FEAFC3;
+  color: #FCFCFC;
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+  box-shadow: 0 4px rgba(45, 52, 64, 0.1);
+  margin: 0;
+  padding: 0;
+}
+
 .basket-button {
   display: block;
   min-width: 32px;
