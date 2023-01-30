@@ -100,12 +100,12 @@
                 </svg>
             </button>
 
-            <div class="popover-basket popover-basket-open">
+            <div class="popover-basket">
               <div class="popover-basket-content">
                 <h2 class="basket-title">Корзина</h2>
                 <ul class="cart-items-list">
                   <li class="cart-item">
-                    <img class="cart-logo" src="../images/raspberry-cart.png" width="46" height="46" alt="Малиновое мороженое">
+                    <img class="cart-logo" src="images/raspberry-cart.png" width="46" height="46" alt="Малиновое мороженое">
                     <p class="cart-item-title">Малинка</p>
                     <p class="cart-item-description">1 кг х 310 ₽</p>
                     <p class="cart-item-price">310 ₽</p>
@@ -117,7 +117,7 @@
                   </li>
 
                   <li class="cart-item">
-                    <img class="cart-logo" src="../images/bubble-cart.png" width="46" height="46" alt="Мороженое со вкусом жвачки">
+                    <img class="cart-logo" src="images/bubble-cart.png" width="46" height="46" alt="Мороженое со вкусом жвачки">
                     <p class="cart-item-title">Бабл-гам</p>
                     <p class="cart-item-description">1,5 кг х 320 ₽</p>
                     <p class="cart-item-price">480 ₽</p>
@@ -128,11 +128,19 @@
                     </button>
                   </li>
                 </ul>
-
-                <button type="button" class="button-checkout">Оформить заказ</button>
-                <span class="final-price">Итого: 790 ₽</span>
+                <div class="checkout-section">
+                  <button type="button" class="button-checkout">Оформить заказ</button>
+                  <span class="final-price">Итого: 790 ₽</span>
+                </div>
               </div>
             </div>
+
+            <div class="popover-basket-empty popover-basket-empty-open">
+              <div class="popover-basket-empty-content">
+                <h2 class="basket-empty-title">Ваша корзина пока <br>пуста</h2>
+              </div>
+            </div>
+
           </li>
         </ul>
       </div>
