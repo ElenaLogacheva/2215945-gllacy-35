@@ -75,14 +75,14 @@
               </svg>
             </button>
 
-            <div class="popover-entrance popover-entrance-open">
+            <div class="popover-entrance">
               <div class="popover-entrance-content">
                 <h2 class="entrance-title">Личный кабинет</h2>
                 <form class="entrance-form" action="#" method="post">
                   <p><label class="visually-hidden" for="mail">Адрес электронной почты</label>
-                    <input class="mail-field" placeholder="email@example.com" type="mail" id="mail" name="mail" required></p>
+                    <input class="mail-field" placeholder="email@example.com" type="email" id="mail" name="mail"></p>
                   <p><label class="visually-hidden" for="password">Пароль</label>
-                    <input class="password-field" placeholder="••••••" type="password" id="password" name="password" required></p>
+                    <input class="password-field" placeholder="••••••" type="password" id="password" name="password"></p>
                   <div class="entrance-button-section">
                     <button class="mail-entrance-button" type="button">Войти</button>
                     <a class="forget-password-link" href="#">Забыли пароль?</a>
@@ -99,6 +99,40 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M1.17.1a.67.67 0 1 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.65a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"/>
                 </svg>
             </button>
+
+            <div class="popover-basket popover-basket-open">
+              <div class="popover-basket-content">
+                <h2 class="basket-title">Корзина</h2>
+                <ul class="cart-items-list">
+                  <li class="cart-item">
+                    <img class="raspberry-cart" src="../images/raspberry-cart.png" width="46" height="46" alt="Малиновое мороженое">
+                    <p class="cart-item-title">Малинка</p>
+                    <p class="cart-item-description">1 кг х 310 ₽</p>
+                    <p class="cart-item-price">310 ₽</p>
+                    <button type="button" class="cart-item-button button">
+                      <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.8 1.14A.67.67 0 1 0 8.86.2L5 4.06 1.14.2a.67.67 0 1 0-.94.94L4.06 5 .2 8.86a.67.67 0 0 0 .94.94L5 5.94 8.86 9.8a.67.67 0 1 0 .94-.94L5.94 5 9.8 1.14Z" fill="#2D3440"/>
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+
+                  <li class="cart-item">
+                    <img class="bubble-cart" src="../images/bubble-cart.png" width="46" height="46" alt="Мороженое со вкусом жвачки">
+                    <p class="cart-item-title">Бабл-гам</p>
+                    <p class="cart-item-description">1,5 кг х 320 ₽</p>
+                    <p class="cart-item-price">480 ₽</p>
+                    <button type="button" class="cart-item-button button">
+                      <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.8 1.14A.67.67 0 1 0 8.86.2L5 4.06 1.14.2a.67.67 0 1 0-.94.94L4.06 5 .2 8.86a.67.67 0 0 0 .94.94L5 5.94 8.86 9.8a.67.67 0 1 0 .94-.94L5.94 5 9.8 1.14Z" fill="#2D3440"/>
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+
+                <button type="button" class="button-checkout">Оформить заказ</button>
+                <span class="final-price">Итого: 790 ₽</span>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
