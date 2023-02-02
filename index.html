@@ -150,101 +150,116 @@
     <main class="main-index">
 
       <section class="slider">
-        <ul class="slider-list">
-          <li class="slider-item slider-item-pink">
-            <div class="slider-about">
-             <div class="slider-content">
-              <h2 class="slider-title">Нежный пломбир <br>с клубничным джемом</h2>
-              <p class="slider-description">Натуральное мороженое из свежих сливок <br>и молока с вкуснейшим клубничным джемом – <br>это идеальный десерт для всей семьи. </p>
-              <button type="button" class="slider-order-button">Заказать</button>
-             </div>
-             <div class="slider-image-section">
+        <div class="slider-wrapper">
+          <ul class="slider-list">
+            <li class="slider-item slider-item-active">
+              <div class="slider-about">
+              <div class="slider-content">
+                <h2 class="slider-title">Нежный пломбир <br>с клубничным джемом</h2>
+                <p class="slider-description">Натуральное мороженое из свежих сливок <br>и молока с вкуснейшим клубничным джемом – <br>это идеальный десерт для всей семьи. </p>
+                <button type="button" class="slider-order-button">Заказать</button>
+              </div>
+              <div class="slider-image-section">
               <img class="slider-image" src="images/ice-cream-slider-pink.png" width="306" height="507"
               alt="Пломбир с клубничным джемом">
-             </div>
-            </div>
-          </li>
-
-          <li class="slider-item slider-item-blue">
-            <div class="slider-about">
-              <div class="slider-content">
-                <h2 class="slider-title">Сливочное мороженое <br>со вкусом банана</h2>
-                <p class="slider-description">Сливочное мороженое с ярким банановым <br>вкусом подарит вам свежесть и наслаждение <br>даже в самый жаркий летний день. </p>
-                <button type="button" class="slider-order-button">Заказать</button>
               </div>
-              <div class="slider-image-section">
-                <img class="slider-image" src="images/ice-cream-slider-blue.png" width="306" height="507" alt="Сливочное мороженое со вкусом банана">
               </div>
-            </div>
-          </li>
+            </li>
 
-
-          <li class="slider-item slider-item-yellow">
-            <div class="slider-about">
-              <div class="slider-content">
-                <h2 class="slider-title">Карамельный пломбир <br>с маршмеллоу</h2>
-                <p class="slider-description">Необычный сладкий десерт с карамельным <br>топпингом и кусочками зефира завоюет <br>сердца сладкоежек всех возрастов.</p>
-                <button type="button" class="slider-order-button">Заказать</button>
+            <li class="slider-item">
+              <div class="slider-about">
+                <div class="slider-content">
+                  <h2 class="slider-title">Сливочное мороженое <br>со вкусом банана</h2>
+                  <p class="slider-description">Сливочное мороженое с ярким банановым <br>вкусом подарит вам свежесть и наслаждение <br>даже в самый жаркий летний день. </p>
+                  <button type="button" class="slider-order-button">Заказать</button>
+                </div>
+                <div class="slider-image-section">
+                  <img class="slider-image" src="images/ice-cream-slider-blue.png" width="306" height="507" alt="Сливочное мороженое со вкусом банана">
+                </div>
               </div>
-              <div class="slider-image-section">
-                <img class="slider-image" src="images/ice-cream-slider-yellow.png" width="306" height="507" alt="Карамельный пломбир с маршмеллоу">
+            </li>
+
+
+            <li class="slider-item">
+              <div class="slider-about">
+                <div class="slider-content">
+                  <h2 class="slider-title">Карамельный пломбир <br>с маршмеллоу</h2>
+                  <p class="slider-description">Необычный сладкий десерт с карамельным <br>топпингом и кусочками зефира завоюет <br>сердца сладкоежек всех возрастов.</p>
+                  <button type="button" class="slider-order-button">Заказать</button>
+                </div>
+                <div class="slider-image-section">
+                  <img class="slider-image" src="images/ice-cream-slider-yellow.png" width="306" height="507" alt="Карамельный пломбир с маршмеллоу">
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
 
-        <div class="slider-controls">
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущее фото</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующее фото</span>
-          </button>
-        </div>
-
-        <ol class="slider-pagination">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">1 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">2 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">3 фото</span>
-            </button>
-          </li>
-        </ol>
-
-        <ul class="social-list">
-          <li class="social-item">
-            <a class="social-link" href="https://t.me/htmlacademy">Telegram
-              <svg class="social-icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0ZM12.43 8.86c-1.17.48-3.5 1.49-7 3.01-.57.23-.86.45-.9.67-.04.36.42.5 1.04.7l.27.08c.6.2 1.43.44 1.86.45.39 0 .82-.16 1.3-.48 3.27-2.21 4.96-3.33 5.06-3.35.08-.02.18-.04.25.02.07.07.07.18.06.22-.05.19-1.84 1.86-2.77 2.72a28.24 28.24 0 0 0-.82.79c-.57.54-1 .96.02 1.63.5.32.89.59 1.28.85a88.77 88.77 0 0 0 1.8 1.23c.5.35.95.67 1.5.62.32-.03.65-.33.82-1.23.4-2.13 1.18-6.73 1.36-8.63.01-.16 0-.31-.02-.47a.5.5 0 0 0-.17-.33.78.78 0 0 0-.46-.14c-.46.01-1.15.25-4.48 1.64Z" fill="#FCFCFC"/>
+          <div class="slider-controls">
+            <button class="slider-button slider-prev" type="button">
+              <svg class="arrow-slider arrow-slider-prev" width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.86 11.14a.66.66 0 0 0 .95-.95L2.6 6l4.2-4.2a.67.67 0 0 0-.95-.94L1.2 5.52a.66.66 0 0 0 0 .94l4.66 4.68Z"/>
               </svg>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a class="social-link" href="https://vk.com/htmlacademy">Vkontakte
-              <svg class="social-icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.41 2.97h-.72s-1.58.09-2.98-1.18C7.37 12.4 6.03 9.65 6.03 9.65s-.07-.18 0-.27c.1-.1.36-.1.36-.1l1.72-.01s.16.02.27.1c.1.05.15.17.15.17s.28.61.65 1.17c.71 1.08 1.05 1.32 1.29 1.2.35-.16.25-1.53.25-1.53s0-.5-.18-.71c-.14-.17-.41-.22-.53-.24-.1-.01.06-.2.26-.3.31-.13.86-.13 1.5-.13.5 0 .65.03.84.07.46.1.44.41.41 1.08l-.02.7v.18c-.01.34-.02.73.23.88.13.07.45 0 1.26-1.19.38-.56.66-1.23.66-1.23s.07-.12.16-.17c.1-.05.24-.04.24-.04h1.8s.54-.06.63.15c.1.23-.2.75-.94 1.61-.7.82-1.03 1.12-1 1.38.01.2.23.38.66.72.89.73 1.13 1.1 1.18 1.2l.01.01c.4.58-.44.62-.44.62l-1.6.02s-.34.06-.8-.2a3.94 3.94 0 0 1-.69-.6c-.33-.34-.65-.66-.91-.58-.45.12-.44.96-.44.96s0 .18-.1.28c-.1.1-.32.12-.32.12Z" fill="#FCFCFC"/>
+              <span class="visually-hidden">Предыдущее фото</span>
+            </button>
+            <button class="slider-button slider-next" type="button">
+              <svg class="arrow-slider arrow-slider-next" width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.14.86a.66.66 0 1 0-.95.95L4.4 6 .2 10.2a.67.67 0 0 0 .95.94L5.8 6.48a.66.66 0 0 0 0-.94L1.15.86Z"/>
               </svg>
-            </a>
-          </li>
+              <span class="visually-hidden">Следующее фото</span>
+            </button>
+          </div>
 
-          <li class="social-item">
-            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">Youtube
-              <svg class="social-icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="m14 11.8-2.8-1.32c-.25-.11-.45.01-.45.29v2.46c0 .28.2.4.45.29L14 12.2c.25-.12.25-.3 0-.42ZM12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm0 16.88c-6.14 0-6.25-.56-6.25-4.88s.1-4.88 6.25-4.88c6.14 0 6.25.56 6.25 4.88s-.1 4.88-6.25 4.88Z" fill="#FCFCFC"/>
-              </svg>
-            </a>
-          </li>
-        </ul>
+          <div class="social-section">
+            <div class="slider-pagination-content">
+              <ol class="slider-pagination">
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                    <span class="visually-hidden">1 фото</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">2 фото</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">3 фото</span>
+                  </button>
+                </li>
+              </ol>
+            </div>
+
+            <div class="social-content">
+              <ul class="social-list">
+                <li class="social-item">
+                  <a class="social-link" href="https://t.me/htmlacademy">
+                    <span class="visually-hidden">Telegram</span>
+                    <svg class="social-icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0ZM12.43 8.86c-1.17.48-3.5 1.49-7 3.01-.57.23-.86.45-.9.67-.04.36.42.5 1.04.7l.27.08c.6.2 1.43.44 1.86.45.39 0 .82-.16 1.3-.48 3.27-2.21 4.96-3.33 5.06-3.35.08-.02.18-.04.25.02.07.07.07.18.06.22-.05.19-1.84 1.86-2.77 2.72a28.24 28.24 0 0 0-.82.79c-.57.54-1 .96.02 1.63.5.32.89.59 1.28.85a88.77 88.77 0 0 0 1.8 1.23c.5.35.95.67 1.5.62.32-.03.65-.33.82-1.23.4-2.13 1.18-6.73 1.36-8.63.01-.16 0-.31-.02-.47a.5.5 0 0 0-.17-.33.78.78 0 0 0-.46-.14c-.46.01-1.15.25-4.48 1.64Z" fill="#FCFCFC"/>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="social-item">
+                  <a class="social-link" href="https://vk.com/htmlacademy">
+                    <span class="visually-hidden">Vkontakte</span>
+                    <svg class="social-icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.41 2.97h-.72s-1.58.09-2.98-1.18C7.37 12.4 6.03 9.65 6.03 9.65s-.07-.18 0-.27c.1-.1.36-.1.36-.1l1.72-.01s.16.02.27.1c.1.05.15.17.15.17s.28.61.65 1.17c.71 1.08 1.05 1.32 1.29 1.2.35-.16.25-1.53.25-1.53s0-.5-.18-.71c-.14-.17-.41-.22-.53-.24-.1-.01.06-.2.26-.3.31-.13.86-.13 1.5-.13.5 0 .65.03.84.07.46.1.44.41.41 1.08l-.02.7v.18c-.01.34-.02.73.23.88.13.07.45 0 1.26-1.19.38-.56.66-1.23.66-1.23s.07-.12.16-.17c.1-.05.24-.04.24-.04h1.8s.54-.06.63.15c.1.23-.2.75-.94 1.61-.7.82-1.03 1.12-1 1.38.01.2.23.38.66.72.89.73 1.13 1.1 1.18 1.2l.01.01c.4.58-.44.62-.44.62l-1.6.02s-.34.06-.8-.2a3.94 3.94 0 0 1-.69-.6c-.33-.34-.65-.66-.91-.58-.45.12-.44.96-.44.96s0 .18-.1.28c-.1.1-.32.12-.32.12Z" fill="#FCFCFC"/>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="social-item">
+                  <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+                    <span class="visually-hidden">Youtube</span>
+                    <svg class="social-icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m14 11.8-2.8-1.32c-.25-.11-.45.01-.45.29v2.46c0 .28.2.4.45.29L14 12.2c.25-.12.25-.3 0-.42ZM12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm0 16.88c-6.14 0-6.25-.56-6.25-4.88s.1-4.88 6.25-4.88c6.14 0 6.25.56 6.25 4.88s-.1 4.88-6.25 4.88Z" fill="#FCFCFC"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            </div>
+          </div>
       </section>
     </main>
     <footer>

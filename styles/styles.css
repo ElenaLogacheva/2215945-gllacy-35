@@ -278,6 +278,8 @@ body {
   display: flex;
   margin-top: 48px;
   padding: 0;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .phone-link {
@@ -793,6 +795,10 @@ body {
   width: 1170px;
 }
 
+.slider {
+  margin-top: 21px;
+}
+
 .slider-list {
   list-style-type: none;
   margin: 0;
@@ -801,6 +807,11 @@ body {
 
 .slider-item {
   padding-left: 70px;
+  display: none;
+}
+
+.slider-item-active {
+  display: block;
 }
 
 .slider-about {
@@ -809,7 +820,7 @@ body {
 }
 
 .slider-content {
-  width: 470px;
+  width: 480px;
   margin-right: 21px;
 }
 .slider-title {
@@ -843,4 +854,218 @@ body {
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.1);
   border: none;
   outline: 4px solid rgba(252, 252, 252, 0.4);
+}
+
+.slider-order-button:hover {
+  background-color: rgba(252, 252, 252, 0.4);
+  outline: 4px solid #FCFCFC;
+  transition: 0.3s;
+}
+
+.slider-order-button:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: 2px solid #2D3440;
+  transition: 0.3s;
+}
+
+.slider-order-button:active {
+  background-color: #FCFCFC;
+  outline: 2px solid #2D3440;
+  transition: 0.3s;
+}
+
+.slider-order-button:disabled {
+  color: #B9B9B9;
+  background-color: #E7E7E7;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: none;
+}
+
+.slider-image-section {
+  position: relative;
+  z-index: 2;
+}
+
+.slider-image-section::after {
+  content: '';
+  width: 312px;
+  height: 312px;
+  border-radius: 50%;
+  border: none;
+  background-color: #FFCBD8;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.slider-button {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: #FCFCFC;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: none;
+  outline: 2px solid #FCFCFC;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+}
+.slider-next {
+  transform: translateX(274px);
+}
+.arrow-slider {
+  position: absolute;
+  fill: #FCFCFC;
+}
+
+.arrow-slider-next {
+  right: 14px;
+  top: 13px;
+}
+
+.arrow-slider-prev {
+  left: 14px;
+  top: 13px;
+
+}
+
+.slider-button:hover {
+  background-color: #FCFCFC;
+  outline: none;
+  transition: 0.3s;
+}
+
+.slider-button:hover .arrow-slider {
+  fill: #2D3440;
+}
+
+.slider-button:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 2px solid #2D3440;
+  transition: 0.3s;
+}
+
+.slider-button:focus .arrow-slider {
+  fill: #2D3440;
+}
+
+.slider-button:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: none;
+  transition: 0.3s;
+}
+
+.slider-button:disabled {
+  opacity: 0.4;
+}
+.social-section {
+  display: flex;
+  justify-content: space-between;
+}
+.slider-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slider-pagination-item {
+  margin-right: 8px;
+}
+.slider-pagination-item:last-child {
+  margin-right: 0;
+}
+.slider-pagination-button {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider-pagination-button-current {
+  background-color: #FCFCFC;
+  outline: none;
+}
+.slider-pagination-button:hover {
+  outline: 1px solid #FCFCFC;
+  transition: 0.3s;
+}
+
+.slider-pagination-button:focus {
+  outline: 1px solid #2D3440;
+  transition: 0.3s;
+}
+
+.slider-pagination-button:active {
+  outline: none;
+}
+
+.social-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.social-item {
+  margin: 0;
+  padding: 0;
+  margin-left: 16px;
+}
+
+.social-item:first-child {
+  margin-left: 0;
+}
+
+.social-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  outline: 2px solid rgba(252, 252, 252, 0.3);
+}
+
+.social-link:hover {
+  background-color: #2D3440;
+  outline: none;
+  border: none;
+  transition: 0.3s;
+}
+
+.social-link:focus {
+  background-color: #2D3440;
+  outline: 2px solid #2D3440;
+  transition: 0.3s;
+}
+
+.social-link:active {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.slider-image {
+  display: block;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 230px;
+  width: 100%;
+  left: 552px;
+  z-index: 2;
+  display: flex;
 }
