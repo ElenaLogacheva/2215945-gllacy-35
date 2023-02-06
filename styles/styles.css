@@ -1210,6 +1210,7 @@ body {
   outline: 4px solid rgba(252, 252, 252, 0.4);
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   padding: 0;
+  cursor: pointer;
 }
 
 .promo-button:hover {
@@ -1246,4 +1247,27 @@ body {
   background-image: url("../images/button-spinner.svg");
   background-position: right;
   background-repeat: no-repeat;
+}
+
+.catalog-popular {
+  margin: 0;
+  padding: 0;
+  margin-top: 81px;
+}
+
+.catalog-popular-title {
+  text-align: center;
+  font-family: "inter", sans-serif;
+  color: #2D3440;
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+  margin: 0;
+  margin-bottom: 56px;
+}
+
+.catalog-popular-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
