@@ -882,6 +882,16 @@ body {
   box-shadow: none;
 }
 
+.slider-order-button:default {
+  padding-right: 56px;
+  background-color: #FCFCFC;
+  border: none;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  background-image: url("../images/button-spinner.svg");
+  background-repeat: no-repeat;
+}
+
 .slider-images {
   display: flex;
   align-items: center;
@@ -1016,6 +1026,7 @@ body {
 
 .slider-button:disabled {
   opacity: 0.4;
+  box-shadow: none;
 }
 
 .socials {
@@ -1110,4 +1121,129 @@ body {
 
 .slider-image {
   display: block;
+}
+
+.promo {
+  margin: 0;
+  padding: 0;
+  margin-top: 80px;
+}
+
+.promo-basic-title {
+  text-align: center;
+  font-family: "inter", sans-serif;
+  color: #2D3440;
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+  margin: 0;
+  margin-bottom: 55px;
+}
+
+.promo-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.promo-item {
+  display: block;
+  width: 534px;
+  height: 100%;
+  background-color: #FF7799;
+  border-radius: 16px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  padding-left: 36px;
+}
+
+.promo-item:nth-child(1) {
+  background-image: url("../images/raspberry.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.promo-item:nth-child(2) {
+  background-image: url("../images/marshmellow.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.promo-title {
+  max-width: 328px;
+  font-family: "inter", sans-serif;
+  color: #2D3440;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.promo-description {
+  max-width: 328px;
+  font-family: "inter", sans-serif;
+  color: #2D3440;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.promo-button {
+  display: block;
+  min-width: 176px;
+  min-height: 44px;
+  font-family: "inter", sans-serif;
+  color: #2D3440;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  background-color: #FCFCFC;
+  border-radius: 26px;
+  border: none;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  padding: 0;
+}
+
+.promo-button:hover {
+  background-color: rgba(252, 252, 252, 0.4);
+  border: none;
+  outline: 4px solid #FCFCFC;
+  transition: 0.3s;
+}
+
+.promo-button:focus {
+  border: none;
+  outline: 2px solid #2D3440;
+  transition: 0.3s;
+}
+
+.promo-button:active {
+  background-color: #FCFCFC;
+  border: none;
+  outline: 2px solid #2D3440;
+  transition: 0.3s;
+}
+
+.promo-button:disabled {
+  opacity: 0.4;
+  box-shadow: none;
+}
+
+.promo-button:default {
+  padding-right: 56px;
+  background-color: #FCFCFC;
+  border: none;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  background-image: url("../images/button-spinner.svg");
+  background-position: right;
+  background-repeat: no-repeat;
 }
