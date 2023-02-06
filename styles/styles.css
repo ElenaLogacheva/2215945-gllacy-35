@@ -814,6 +814,7 @@ body {
   display: block;
 }
 
+
 .slider-about {
   display: flex;
   align-items: center;
@@ -881,23 +882,18 @@ body {
   box-shadow: none;
 }
 
-.slider-image-list {
-  list-style-type: none;
+.slider-images {
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 
-.slider-image-item {
-  display: block;
-  margin: 0;
-  padding: 0;
+.basic-slider-image {
   position: relative;
-  z-index: 2;
 }
 
-
-.slider-image-item::after {
+.basic-slider-image::after {
   content: '';
   width: 312px;
   height: 312px;
@@ -913,16 +909,52 @@ body {
   margin: auto;
 }
 
-.slider-image-item-next img {
-  transform: scale(0.3);
-  transform-origin: 0 0;
-  opacity: 0.4;
+.slider-preview-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 79px;
 }
 
-.slider-image-item-next .slider-image-item::after {
+.slider-preview-item {
+  display: block;
+  width: 66px;
+  height: 150px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-preview-item:last-child {
+  margin-left: 70px;
+}
+
+.slider-preview-item::after {
+  content: '';
   width: 100px;
   height: 100px;
+  border-radius: 50%;
+  border: none;
+  background-color: #FFCBD8;
+  position: absolute;
+  z-index: -1;
   opacity: 0.4;
+  top: 26px;
+  right: -20px;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 235px;
+  width: 100%;
+  left: 482px;
+  z-index: 2;
+  display: flex;
 }
 
 .slider-button {
@@ -935,8 +967,8 @@ body {
   outline: 2px solid #FCFCFC;
   box-sizing: border-box;
   cursor: pointer;
-  position: relative;
   padding: 0;
+  position: relative;
 }
 .slider-next {
   transform: translateX(274px);
@@ -954,7 +986,6 @@ body {
 .arrow-slider-prev {
   left: 14px;
   top: 13px;
-
 }
 
 .slider-button:hover {
@@ -987,7 +1018,7 @@ body {
   opacity: 0.4;
 }
 
-.social-section {
+.socials {
   display: flex;
   justify-content: space-between;
 }
@@ -1079,17 +1110,4 @@ body {
 
 .slider-image {
   display: block;
-}
-
-.slider-wrapper {
-  position: relative;
-}
-
-.slider-controls {
-  position: absolute;
-  top: 230px;
-  width: 100%;
-  left: 552px;
-  z-index: 2;
-  display: flex;
 }
