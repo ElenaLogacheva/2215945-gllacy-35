@@ -2,7 +2,7 @@
   font-family: "inter";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/raleway/inter-400.woff2") format("woff2");
+  src: url("../fonts/inter-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "inter";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/raleway/inter-400.woff2") format("woff2");
+  src: url("../fonts/inter-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@
   font-family: "inter";
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/raleway/inter-400.woff2") format("woff2");
+  src: url("../fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -924,7 +924,7 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-left: 79px;
+  margin-left: 70px;
 }
 
 .slider-preview-item {
@@ -937,7 +937,7 @@ body {
 }
 
 .slider-preview-item:last-child {
-  margin-left: 70px;
+  margin-left: 65px;
 }
 
 .slider-preview-item::after {
@@ -1032,6 +1032,8 @@ body {
 .socials {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 .slider-pagination {
   display: flex;
@@ -1094,6 +1096,7 @@ body {
 
 .social-link {
   display: block;
+  box-sizing: border-box;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -1269,7 +1272,8 @@ body {
 .catalog-popular-list {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  column-gap: 30px;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -1369,4 +1373,130 @@ body {
 
 .catalog-basket-button:disabled .catalog-basket-icon {
   fill: #565C66;
+}
+
+.advantages {
+  display: block;
+  background-image: url("../images/vaffle.jpg");
+  background-repeat: no-repeat;
+  background-size: 1170px 480px;
+  border-radius: 20px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.advantages-about {
+  margin: 0 auto;
+  width: 1122px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.advantages-title {
+  text-align: center;
+  font-family: "inter", sans-serif;
+  color: #2D3440;
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.advantages-list {
+  list-style-type: none;
+  font-family: "inter", sans-serif;
+  color: #565C66;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  justify-content: start;
+  column-gap: 31px;
+  row-gap: 40px;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 56px;
+}
+
+.advantages-item {
+  width: 445px;
+  margin: 0;
+  padding-left: 64px;
+}
+
+.advantages-item:nth-child(1) {
+  background-image: url("../images/ice-cream-icon.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.advantages-item:nth-child(2) {
+  background-image: url("../images/cow-icon.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.advantages-item:nth-child(3) {
+  background-image: url("../images/sheet-icon.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.advantages-item:nth-child(4) {
+  background-image: url("../images/thermometer-icon.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.advantages-description {
+  margin: 0;
+}
+
+.blog {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 80px;
+  column-gap: 30px;
+}
+
+.blog-cart {
+  width: 538px;
+  background-image: url("../images/news.png");
+  background-repeat: no-repeat;
+  background-size: 570px;
+  background-position: bottom;
+  border-radius: 16px;
+  margin: 0;
+  padding-left: 32px;
+  padding-top: 32px;
+  padding-bottom: 67px;
+}
+
+.blog-cart-description {
+  font-family: "inter", sans-serif;
+  color: #565C66;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.blog-cart-title {
+  font-family: "inter", sans-serif;
+  color: #2D3440;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 12px;
+}
+
+.blog-subscription {
+  width: 570px;
+  background-image: url("../images/mail.png");
+  background-color: #FCFCFC;
+  background-size: 558px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
 }
