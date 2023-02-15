@@ -416,7 +416,7 @@
             <br>в курсе всего самого вкусного, что у нас происходит. Обещаем <br>не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form class="blog-sub-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="booking">E-mail</label>
-          <input class="sub-field" placeholder="email@example.com" type="email" id="email" name="email">
+          <input class="sub-field field" placeholder="email@example.com" type="email" id="email" name="email">
           <button class="sub-button" type="submit">Отправить</button>
           </form>
           </div>
@@ -431,20 +431,37 @@
         <div class="delivery-appointment">
           <p class="delivery-form-description">Укажите адрес и дату доставки, и мы свяжемся <br>с вами, чтобы подтвердить заказ.</p>
           <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="field-group delivery-form-date>
-            <span class="form-label" for="delivery-date">Дата</span>
-            <input type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
-          </p>
-          <p class="field-group delivery-form-phone">
-            <span class="form-label" for="delivery-phone">Телефон</span>
-            <input class="field" type="text" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
-          </p>
-          <p class="field-group delivery-form-adress">
-            <span class="form-label" for="delivery-adress">Адрес</span>
-            <input class="field" type="text" id="delivery-adress" name="delivery-adress">
-          </p>
-          <button class="delivery-submit" type="submit">Отправить</button>
+            <p class="field-group delivery-form-date">
+              <label class="form-label" for="delivery-date">Дата</label>
+              <input class="date-field field" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
+            </p>
+            <p class="field-group delivery-form-phone">
+              <label class="form-label" for="delivery-phone">Телефон</label>
+              <input class="phone-field field" type="text" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
+            </p>
+            <p class="field-group delivery-form-adress">
+              <label class="form-label" for="delivery-adress">Адрес</label>
+              <input class="adress-field field" type="text" id="delivery-adress" name="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8">
+            </p>
+            <button class="delivery-button" type="submit">Отправить</button>
           </form>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts-about">
+          <p class="adress-description">
+            Адрес главного офиса и офлайн-магазина:
+          </p>
+          <a class="adress-link" href="#">наб. реки Карповки, <br>5 лит П, Санкт-Петербург</a>
+          <p class="adress-description adress-phone-descriotion">
+            Для заказов по телефону:
+          </p>
+          <a class="adress-link" href="tel:+78121212">+7 (812) 812-12-12</a>
+          <p class="phone-description">
+            (с 10 до 20 ежедневно)
+          </p>
+          <button class="feedback-button" type="button">Форма обратной связи</button>
         </div>
       </section>
     </main>
