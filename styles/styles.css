@@ -1863,3 +1863,53 @@ body {
   outline: 4px solid rgba(185, 185, 185, 0.3);
   box-shadow: none;
 }
+
+.page-footer {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 48px;
+}
+.company-about {
+  width: 356px;
+  margin-left: 299px;
+}
+
+.company-about-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 126px 186px;
+  column-gap: 24px;
+  row-gap: 8px;
+}
+
+.company-about-link {
+  text-decoration: none;
+  font-family: "inter", sans-serif;
+  color: #2D3440;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.company-about-item:first-child {
+  font-weight: 700;
+}
+
+.htmlacademy-about {
+  margin-left: 200px;
+}
+
+.htmlacademy-link {
+  display: block;
+  width: 93px;
+  height: 27px;
+}
+
+.htmlacademy-description {
+  font-family: "inter", sans-serif;
+  color: #2D3440;
+  font-size: 14px;
+  line-height: 16px;
+}
