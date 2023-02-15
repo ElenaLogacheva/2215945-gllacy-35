@@ -58,21 +58,20 @@ body {
   width: 1170px;
   margin: 0 auto;
   display: flex;
+  align-items: center;
+  padding-top: 24px;
 }
 
 .gllacy-logo {
-  margin-top: 24px;
-  margin-right: 24px;
+
 }
 .navigation {
   display: flex;
-  min-height: 56px;
 }
 
 .navigation-first {
   display: flex;
-  margin-top: 38px;
-  margin-right: 100px;
+  margin-left: 16px;
 }
 
 .catalog-button {
@@ -87,9 +86,6 @@ body {
   padding: 0;
   padding-left: 16px;
   padding-right: 38px;
-  margin: 0;
-  margin-top: -2px;
-  margin-right: 16px;
   box-sizing: border-box;
   cursor: pointer;
   position: relative;
@@ -98,7 +94,7 @@ body {
 .select-catalog {
   position: absolute;
   z-index: 2;
-  top: 80px;
+  top: 85px;
   box-sizing: border-box;
   width: 135px;
   font-family: "inter", sans-serif;
@@ -129,7 +125,6 @@ body {
 .select-catalog-item:last-child {
   padding: 0;
 }
-
 
 .select-catalog-link {
   text-decoration: none;
@@ -199,17 +194,18 @@ body {
 
 .catalog-button:focus {
   background-color: rgba(252, 252, 252, 0.5);
-  border: 2px solid #2D3440;
+  outline: 2px solid #2D3440;
   border-radius: 30px;
 }
 
 .catalog-button:active {
   background-color: #FCFCFC;
 }
-
+/*
 .catalog-button:focus .catalog-arrow {
   margin: -2px;
 }
+*/
 
 .catalog-button-default {
   background-color: #FF4A78;
@@ -263,7 +259,7 @@ body {
 
 .navigation-link:focus {
   background-color: rgba(252, 252, 252, 0.5);
-  border: 2px solid #2D3440;
+  outline: 2px solid #2D3440;
   border-radius: 30px;
 }
 
@@ -272,14 +268,13 @@ body {
   background-color: #FCFCFC;
 }
 .navigation-delivery-link {
-  margin-right: 32px;
+
 }
 .navigation-second {
   display: flex;
-  margin-top: 48px;
+  gap: 16px;
   padding: 0;
-  margin-right: 0;
-  margin-left: auto;
+  margin-left: 164px;
 }
 
 .phone-link {
@@ -291,11 +286,12 @@ body {
   text-transform: none;
   padding: 0;
   margin: 0;
-  margin-right: 16px;
+  margin-top: 8px;
 }
 
 .navigation-list {
   display: flex;
+  gap: 16px;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -317,8 +313,6 @@ body {
   background: rgba(252, 252, 252, 0.3);
   padding: 0;
   margin: 0;
-  margin-top: -10px;
-  margin-right: 16px;
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -336,8 +330,8 @@ body {
 .popover-search {
   position: absolute;
   z-index: 1;
-  top: 28px;
-  right: 15px;
+  top: 45px;
+  right: 2px;
   box-sizing: border-box;
   width: 356px;
   font-family: "inter", sans-serif;
@@ -349,6 +343,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   display: none;
+  padding-top: 24px;
+  padding-left: 16px;
 }
 .popover-search-open {
   display: block;
@@ -359,8 +355,6 @@ body {
   box-sizing: border-box;
   width: 324px;
   min-height: 48px;
-  margin-left: 16px;
-  margin-top: 24px;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
   padding-left: 16px;
@@ -389,8 +383,6 @@ body {
   padding-left: 30px;
   padding-right: 16px;
   margin: 0;
-  margin-top: -10px;
-  margin-right: 16px;
   box-sizing: border-box;
   cursor: pointer;
   font-size: 14px;
@@ -474,7 +466,6 @@ body {
   display: grid;
   grid-template-columns: 121px 120px;
   column-gap: 23px;
-  margin-top: 32px;
 }
 
 .mail-entrance-button {
@@ -484,7 +475,7 @@ body {
   height: 44px;
   border-radius: 26px;
   background-color: #FF2F64;
-  border: 4px solid #FEAFC3;
+  outline: 4px solid #FEAFC3;
   color: #FCFCFC;
   font-family: "inter", sans-serif;
   font-weight: 700;
@@ -550,8 +541,6 @@ body {
   padding-left: 37px;
   padding-right: 16px;
   margin: 0;
-  margin-top: -10px;
-  margin-right: 16px;
   box-sizing: border-box;
   cursor: pointer;
   font-size: 14px;
@@ -673,7 +662,8 @@ body {
   border-radius: 26px;
   background-color: #FF2F64;
   color: #FCFCFC;
-  border: 4px solid #FEAFC3;
+  outline: 4px solid #FEAFC3;
+  border: none;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -735,9 +725,9 @@ body {
 
 .navigation-button:focus {
   background-color: rgba(252, 252, 252, 0.5);
-  border: 2px solid #2D3440;
+  outline: 2px solid #2D3440;
 }
-
+/*
 .navigation-button:focus .entrance-icon {
   margin: -2px;
 }
@@ -745,10 +735,11 @@ body {
 .navigation-button:focus .basket-icon {
   margin: -2px;
 }
-
+*/
 .navigation-button:active {
   background-color: #FCFCFC;
   border: none;
+  outline: none;
 }
 
 .navigation-button-default {
@@ -774,9 +765,10 @@ body {
 
 .navigation-button-default:focus {
   background-color: #FF4A78;
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
+  border: none;
 }
-
+/*
 .navigation-button-default:focus .entrance-icon {
   margin: -2px;
 }
@@ -784,7 +776,7 @@ body {
 .navigation-button-default:focus .basket-icon {
   margin: -2px;
 }
-
+*/
 .navigation-button-default:active {
   opacity: 0.3;
 }
@@ -1869,6 +1861,7 @@ body {
   margin: 0 auto;
   display: flex;
   margin-top: 48px;
+  padding-bottom: 48px;
 }
 .company-about {
   width: 356px;
@@ -1880,10 +1873,11 @@ body {
   padding: 0;
   list-style-type: none;
   display: grid;
-  grid-template-columns: 126px 186px;
+  grid-template-columns: 149px 186px;
   column-gap: 24px;
   row-gap: 8px;
 }
+
 
 .company-about-link {
   text-decoration: none;
@@ -1895,10 +1889,18 @@ body {
 
 .company-about-item:first-child {
   font-weight: 700;
+  padding-left: 23px;
+  background-image: url("../images/heart.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom 35%;
+}
+
+.company-about-item:nth-child(3) {
+  padding-left: 23px;
 }
 
 .htmlacademy-about {
-  margin-left: 200px;
+  margin-left: 180px;
 }
 
 .htmlacademy-link {
@@ -1907,9 +1909,27 @@ body {
   height: 27px;
 }
 
+.htmlacademy-link:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
 .htmlacademy-description {
   font-family: "inter", sans-serif;
   color: #2D3440;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 16px;
+  margin: 0;
+  margin-top: 14px;
+  position: relative;
+}
+
+.htmlacademy-description::after {
+  content: '';
+  width: 82px;
+  height: 1px;
+  background-color: #2D3440;
+  position: absolute;
+  bottom: 0;
+  right: 45px;
 }
