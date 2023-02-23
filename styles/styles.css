@@ -1752,27 +1752,15 @@ p {
   grid-template-columns: 117px 287px;
   column-gap: 16px;
   row-gap: 20px;
-  position: relative;
 }
+
+
 .form-label-date {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-}
-
-.delivery-form-phone {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-
-.field-group {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-}
-
-.form-label-date {
   position: relative;
 }
+
 .form-label-date::after {
   content: '';
   width: 14px;
@@ -1784,40 +1772,37 @@ p {
   cursor: pointer;
 }
 
-.tooltip {
-  display: none;
-  font-family: "inter", sans-serif;
-  color: #565C66;
-  font-size: 12px;
-  line-height: 16px;
+.delivery-form-phone {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.form-label-adress {
+  position: relative;
+}
+
+.form-label-adress::after {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background-image: url("../images/info.svg");
   position: absolute;
-  min-width: 169px;
-  min-height: 70px;
-  background-image: url("../images/tooltip.svg");
-  background-size: 180px 70px;
-  background-position-x: center;
-  background-position-y: top;
-  left: 57px;
-  top: -12px;
-  padding-top: 15px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 8px;
-  box-sizing: border-box;
-  transition: 0.3s;
-
-
+  top: 4px;
+  left: 55px;
+  cursor: pointer;
+}
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
-.form-label-date:hover::after .tooltip{
-  display: block;
-  z-index: 2;
-}
 
 
 .delivery-form-adress {
   grid-column: 1 / -1;
 }
+
 
 .form-label {
   font-family: "inter", sans-serif;
